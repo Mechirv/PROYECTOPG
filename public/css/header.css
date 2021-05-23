@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+*{
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*-----ESTILOS DEL HEADER-----*/
+header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.header-top{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 50%;
+    padding-right: 5px;
+}
+.cuotas{
+    font-weight: 400;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+    padding-top: 15px;
+    text-align: center;
+}
+.busqueda{
+    width: 50%;
+    align-content: center;
+    align-self: center;
+}
+#busqueda{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.fa-search{
+    display: none;
+}
+
+
+
+/*-----MENU DE NAVEGACIÓN-----*/
+ 
+li{
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+.nav-bar{
+    display: none;
+    padding: 0%;
+}
+
+
+.burger-menu{
+    text-align: center;
+}
+
+#menu{
+    display: none;
+}
+
+.burger-menu label {
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    user-select: none;
+    background-color:#1259c3;;
+    color: white;
+    margin: 5px;
+    padding: 8px;
+
+  }
+
+.encabezado{
+    display: inline-block;
+    width: 50%;
+}
+
+
+
+                /*----------MEDIA QUERIES----------*/
+
+/*---TABLET---*/
+@media (min-width:481px){
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 35%;
+    }
+
+    .cuotas{
+        max-width: 35%;
+        align-self: center;
+        text-align: right;
+        font-size: 14px;
+    }
+
+   .busqueda{
+       padding-left: 20px;
+       display: flex;
+        width: 30%;
+        text-align: center;
+        align-self: center;
+        align-items: center;
+    }
+   #form-busqueda{
+       display: flex;
+       width: 100%;
+   }
+    #busqueda{
+        width: 80%;
+    }
+
+    .fa-search{
+        display: block;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        background-color:white;
+        margin-left: 4px;
+    }
+
+    .header-bottom{
+        padding:10px 0;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-bar ul{
+        display: flex;
+    }
+    .nav-bar ul li{
+        margin: 0 5px;
+        
+    }
+
+    .nav-bar ul li a{ 
+       text-decoration: none;
+        
+    }
+
+}
+
+
+
+/*---NOTEBOOKS---*/
+@media (min-width:769px){
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .logo{
+        width: 35%;
+
+    }
+
+    .cuotas{
+        max-width: 35%;
+        align-self: center;
+        text-align: right;
+        font-size: 16px;
+    
+    }
+
+   
+   .busqueda{
+       padding-left: 20px;
+       display: flex;
+        width: 30%;
+        text-align: center;
+        align-self: center;
+        align-items: center;
+    }
+    #busqueda{
+        width: 80%;
+    }
+    .fa-search{
+        display: block;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        background-color:white;
+        margin-left: 4px;
+    }
+
+    .header-bottom{
+        padding:10px 0;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-bar ul{
+        display: flex;
+    }
+    .nav-bar ul li{
+        margin: 0 8px;
+    }
+   
+}

@@ -1,0 +1,147 @@
+
+/*-----ESTILOS DEL MAIN-----*/
+
+main{ 
+    background-color:#ebebeb;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.register-contenedor{
+    padding: 30px 30px;
+    font-size: 14px;
+    width: 80%;   
+}
+
+h1{
+    font-size: 16px;
+    width: 100%;
+    color: #666;
+}
+form label, form legend{
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+
+.nom-ape, .confirm-pass,
+.usuario, .fecNac, .domicilio,
+.password, .foto
+{
+    display: block;
+    margin-top: 20px; 
+    width: 100%;      
+}
+
+#nom-ape, #confirm-pass,
+#usuario, #fecNac, #domicilio, 
+#password, #foto
+{
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+  border: none;
+  font-size: 16px;
+  margin: 0px;
+  padding: 5px;
+  width: 100%;
+  background-color: white;
+  color: #5f6b74;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+/*---fieldset perfil comp-vend---*/
+.perfil{
+    display: flex;
+    border:none;
+    margin-top: 20px;
+}
+
+.perfil-radio{
+    width: 50%;
+    display: flex;
+    padding-top: 10px;
+}
+.perfil-radio input{
+    width: 40%;
+}
+.perfil-radio label{
+    width: 60%;
+    font-weight: 400;
+}
+
+
+
+/*-----fieldset intereses-----*/
+.intereses{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border:none;
+}
+.check-interes{
+    padding: 10px;
+}
+.check-interes label{
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+
+
+/*---botones---*/
+.buttons{
+    display: flex;
+    margin-top: 20px;
+}
+.button{
+    width: 50%;
+    padding: 10px;
+}
+#button-register, #cancel{
+    padding: 5px;
+    color: #FFF;
+    font-style: normal;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 100%;
+    border: 1px solid #1259c3;
+    background-color: #1259c3;
+    font-size: 14px;
+    text-align: center;
+  }
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.volver-home{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+        /*----MEDIA QUERIES------*/
+
+@media (min-width:481px){
+    .register-contenedor{
+        max-width: 50vw;
+}
+ 
+}
+
+@media (min-width:769px){
+    .register-contenedor{
+        width: 40vw;
+}
+}
+
+

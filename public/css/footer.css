@@ -1,0 +1,30 @@
+
+
+/*-----ESTILOS DEL FOOTER-----*/
+
+.cuerpo{
+    font-size: 12px;
+
+}
+
+footer .fas{
+    color:#1259c3;
+   font-size: 2em;
+    margin-bottom: 10px;
+
+
+}
+
+footer{
+    color: #666;
+    text-align: center;
+    padding: 5% 2%;
+}
+
+h4{
+    margin: 0px;
+}
+
+.pie{
+    margin-bottom: 20px;
+}

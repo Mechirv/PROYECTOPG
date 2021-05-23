@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+*{
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+/*-----ESTILOS DEL MAIN-----*/
+
+main{
+    background-color:#ebebeb;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-contenedor{
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+h1{
+    font-size: 16px;
+    width: 100%;
+    color: #666;
+}
+
+#form-login{
+    width: 100%;
+}
+
+#checkbox{
+    text-align: left;
+}
+.usuario, .password{
+    display: block;
+    margin-top: 20px;
+}
+
+
+#usuario, #pass{
+border-radius: 5px;
+    background: rgb(255, 255, 255);
+  border: none;
+  font-size: 16px;
+  margin: 0px;
+  padding: 5px;
+  width: 100%;
+  background-color: white;
+  color: #5f6b74;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+#pass :invalid{
+    content: "Formato inválido";
+}
+
+#check{
+    display: block;
+    margin-top: 5px;
+}
+
+#button-login{
+      display: flex;
+      justify-content: center;
+  }
+  #login{
+    padding: 5px;
+    color: #FFF;
+    font-style: normal;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 100%;
+    border: 1px solid #1259c3;
+    background-color: #1259c3;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0 10px;
+  }
+
+  #forgot-pass{
+      text-align: center;
+      font-size: 14px;
+      margin-top: 5px;
+      border-bottom:solid 1px #e2e2eb;
+      padding-bottom: 15px;
+  }
+
+  #create-account{
+     display: block;
+      margin:20px 0;
+     
+  }
+
+                /*----------MEDIA QUERIES----------*/
+
+/*---TABLET---*/
+@media (min-width:481px){
+    .login-contenedor{
+        width: 60%;
+        align-content: center;
+        align-items: center;
+        margin-top: 20px;
+    
+    }
+
+}
+
+
+
+/*---NOTEBOOKS---*/
+@media (min-width:769px){
+    .login-contenedor{
+        width: 30%;
+        align-content: center;
+        align-items: center;
+        margin-top: 20px;
+    
+    }
+    
+
+
+}
