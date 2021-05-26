@@ -9,8 +9,12 @@
 
 /*-----ESTILOS DEL HEADER-----*/
 header{
+
     background-color: #EAC926;
     padding: 20px;
+    width: 100%;
+  
+   
 }
 
 .header-top{
@@ -30,6 +34,8 @@ header{
     padding-top: 15px;
     text-align: center;
 }
+
+/*Form de busqueda*/
 .busqueda{
     width: 50%;
     align-content: center;
@@ -47,29 +53,27 @@ header{
 }
 
 
+#encabezado{
+    display: block;
+    width: 100%;
+}
+
 
 /*-----MENU DE NAVEGACIÓN-----*/
- 
-li{
-    list-style-type: none;
-    margin-left: 0px;
+.header-bottom{
+    text-align: center;
+  
 }
 
 .nav-bar{
     display: none;
     padding: 0%;
+    text-align: left;
+  
 }
 
 
-.burger-menu{
-    text-align: center;
-}
-
-#menu{
-    display: none;
-}
-
-.burger-menu label {
+label#menu{
     box-sizing: border-box;
     display: inline-block;
     border-radius: 4px;
@@ -79,13 +83,30 @@ li{
     color: white;
     margin: 5px;
     padding: 8px;
-
   }
 
-.encabezado{
-    display: inline-block;
-    width: 50%;
+#check-menu{
+      display: none;
+  }
+#check-menu:checked + .nav-bar{
+    display: block;
 }
+.nav-bar ul{
+    text-align: left;
+    list-style-type: none;
+}
+.nav-bar ul li{
+    padding: 5px;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+}
+
+
+
+ 
+
 
 
 
@@ -93,6 +114,7 @@ li{
 
 /*---TABLET---*/
 @media (min-width:481px){
+    /*header*/
     .header-top{
         display: flex;
         justify-content: space-between;
@@ -134,11 +156,13 @@ li{
         margin-left: 4px;
     }
 
+        /*menu navegación*/
     .header-bottom{
         padding:10px 0;
     }
 
-    .burger-menu{
+  
+    #check-menu, label#menu{
         display: none;
     }
 
@@ -148,6 +172,7 @@ li{
     }
     .nav-bar ul{
         display: flex;
+        list-style-type: none;
     }
     .nav-bar ul li{
         margin: 0 5px;
@@ -165,6 +190,7 @@ li{
 
 /*---NOTEBOOKS---*/
 @media (min-width:769px){
+    /*header*/
     .header-top{
         display: flex;
         justify-content: space-between;
@@ -205,6 +231,7 @@ li{
         margin-left: 4px;
     }
 
+    /*---menu de navegación--*/
     .header-bottom{
         padding:10px 0;
     }

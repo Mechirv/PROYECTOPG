@@ -11,14 +11,16 @@ footer .fas{
     color:#1259c3;
    font-size: 2em;
     margin-bottom: 10px;
-
-
 }
 
 footer{
     color: #666;
     text-align: center;
     padding: 5% 2%;
+}
+footer .fas:hover{
+    color: #0022AA;
+  transition: color, 0.5ms;
 }
 
 h4{
@@ -27,4 +29,13 @@ h4{
 
 .pie{
     margin-bottom: 20px;
+}
+
+/*---NOTEBOOKS---*/
+@media (min-width:769px){
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    
 }

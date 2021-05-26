@@ -1,11 +1,11 @@
 /*-----ESTILOS DEL MAIN-----*/
 
 main{
-    
     background-color:#ebebeb;
     padding: 2%;
 }
 
+/*Sección ultima Busqueda-ofertas*/
 #ultimaBusqueda{
     padding-bottom: 2%;
     border-bottom: solid 1px #ccc7c7;
@@ -21,36 +21,27 @@ h3{
     color: #666;
 }
 
-article{
+/*articulos*/
+.article{
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
     background-color: white;
 }
 
-article img{
+.article img{
     width: 100%;
 }
 
 .articulo{
     border-top: solid 1px #ebebeb;
     padding: 15px;
+    position: relative;
 
 }
-/*article .fas{
-    width: 40px;
-    height: 40px;
-}
 
-.fa-truck{
-    width: 40px;
-    height: 40px;
-    padding: 2.5px;
-    margin-left: 3px;
-    margin-top: 3px;
-
-}*/
 .articulo .envio i{
+position: absolute;
 display: block;
 font-size: 16px;
 padding: 5px;
@@ -60,7 +51,7 @@ border: 1px solid #39b54a;
 background-color: #FFF;
 border-radius: 50%;
 right: 20px;
-/*top: -15px;*/
+top: -15px;
 }
 
 .envio{
@@ -69,30 +60,39 @@ right: 20px;
 }
 .precio-desc{
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
     margin: 5px 0;
+    
+    
 }
 .precio{
     font-size: 18px;
-    width:40% ;
     color: #666;
+    padding-right: 5px;
 }
+
+.descuento{
+    font-size: 16px;
+    color:#39b54a;
+    text-align: left;
+    align-self: center;
+}
+
 .descripcion{
     font-size: 16px;
     font-weight: bold;
     color: #666;
-    display: none;
+    display: block;
+    opacity: 0;
 
 }
-.descuento{
-    font-size: 16px;
-    color:#39b54a;
-    width: 60%;
-    text-align: right;
-
+.descripcion:hover{
+    opacity: 1;
+}
+.article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 
 }
+
 
 
 
@@ -107,14 +107,15 @@ right: 20px;
         justify-content: space-around;
     }
     
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .article{
+
         width: 45%;
     }
 
     .descripcion{
         display: block;
     }
+    
 
 }
 
@@ -128,13 +129,15 @@ right: 20px;
         justify-content: space-around;
     }
     
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 20%;
+    .article{
+       
+        width: 23%;
         margin: 0;
     }
 
     .descripcion{
         display: block;
     }
+    
+    
 }

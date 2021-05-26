@@ -16,7 +16,11 @@
 
     <header class="header">
         <div class="header-top">
-            <div class="logo"><img src="../images/logo-mercado-liebre.svg" alt="Logo de la pagina"/></div>
+            <div class="logo">
+                <a href="/">
+                    <img src="../images/logo-mercado-liebre.svg" alt="Logo de la pagina"/>
+                </a>
+            </div>
             
             <div class="busqueda">
                 <form id="form-busqueda" method="GET" action="/">
@@ -30,10 +34,8 @@
        
         <!--MENU DE NAVEGACIÓN-->
         <div class="header-bottom">
-            <div class="burger-menu">
-                <input type="checkbox" id="menu">
-                <label for="menu"><i background-color="blue" class="fas fa-bars fa-1x"></i></label>
-            </div>
+            <label for="check-menu" id="menu"><i class="fas fa-bars fa-1x"></i></label>
+            <input type="checkbox" id="check-menu">
 
             <nav class="nav-bar">
                 <ul class="left-bar">
@@ -43,7 +45,7 @@
                     <li><a href="ayuda.html" >Ayuda </a></li>
                 </ul>
                 <ul class="right-bar">
-                    <li><a href="/register">Creá tu cuenta<i class="far fa-address-card"></i></li>
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-address-card"></i></li>
                     <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a> </li>
                     <li>Mis compras <i class="fas fa-shopping-basket"></i></li>
                 </ul>

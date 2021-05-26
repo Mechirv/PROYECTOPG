@@ -16,7 +16,11 @@
 
     <header class="header">
         <div class="header-top">
-            <div class="logo"><img src="../images/logo-mercado-liebre.svg" alt="Logo de la pagina"/></div>
+            <div class="logo">
+                <a href="/">
+                    <img src="../images/logo-mercado-liebre.svg" alt="Logo de la pagina"/>
+                </a>
+            </div>
             
             <div class="busqueda">
                 <form id="form-busqueda" method="GET" action="/">
@@ -28,12 +32,12 @@
         </div>
        
         <!--MENU DE NAVEGACIÓN-->
+       
         <div class="header-bottom">
-            <div class="burger-menu">
-                <input type="checkbox" id="menu">
-                <label for="menu"><i background-color="blue" class="fas fa-bars fa-1x"></i></label>
-            </div>
 
+            <label for="check-menu" id="menu"><i class="fas fa-bars fa-1x"></i></label>
+            <input type="checkbox" id="check-menu">
+            
             <nav class="nav-bar">
                 <ul class="left-bar">
                     <li>Ofertas </li>
@@ -42,12 +46,17 @@
                     <li><a href="ayuda.html" >Ayuda </a></li>
                 </ul>
                 <ul class="right-bar">
-                    <li><a href="/register">Creá tu cuenta<i class="far fa-address-card"></i></li>
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-address-card"></i></li>
                     <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a> </li>
                     <li>Mis compras <i class="fas fa-shopping-basket"></i></li>
                 </ul>
             </nav>
-        </div>  
+
+
+        </div>
+
+
+
     </header>
    
     <div id="encabezado"><img src="../images/img-home-banner.jpg" alt="imagen encabezado" width="100%"/></div>  
@@ -58,7 +67,7 @@
     <section id="ultimaBusqueda">
         <h3>Basado en tu última búsqueda</h3>
         <div class="grid-articulos">
-            <article>
+            <article class="article">
                 <img src="../images/img-cafetera-moulinex.jpg" alt="imagen cafetera"/>
                 <div class="articulo">
                     <div class="envio"><i class="fas fa-truck"></i></div>
@@ -69,7 +78,7 @@
                     <p class="descripcion">Cafetera Moulinex</p> 
                 </div>   
             </article>
-            <article>
+            <article class="article">
                 <img src="../images/img-macbook-pro-2019.jpg" alt="imagen macBook"/>
                 <div class="articulo">
                     <div class="envio"><i class="fas fa-truck"></i></div>
@@ -80,7 +89,7 @@
                     <p class="descripcion">MacBook Pro 2019</p>
                 </div>
             </article>
-            <article>
+            <article class="article"> 
                 <img src="../images/img-samsung-galaxy-s10.jpg" alt="imagen samsung galaxy"/>
                 <div class="articulo">
                     <div class="envio"><i class="fas fa-truck"></i></div>
@@ -91,7 +100,7 @@
                     <p class="descripcion">Galaxy S10</p>
                 </div>
             </article>
-            <article>
+            <article class="article">
                 <img  src="../images/img-tv-samsung-smart.jpg" alt="imagen tv"/>
                 <div class="articulo">
                     <div class="envio"><i class="fas fa-truck"></i></div>
@@ -109,7 +118,7 @@
     <section id= ofertas>
         <h3>Sección de Ofertas</h3>
         <div class="grid-articulos">
-            <article>
+            <article class="article">
                 <img src="../images/img-cafetera-moulinex.jpg" alt="imagen cafetera"/>
                 <div class="articulo">
                     <div class="envio"><i class="fas fa-truck"></i></div>
@@ -122,7 +131,7 @@
                 </div> 
             
             </article>
-            <article>
+            <article class="article">
                 <img src="../images/img-macbook-pro-2019.jpg" alt="imagen macBook"/>
                 <div class="articulo">
                     <div class="envio"><i class="fas fa-truck"></i></div>
@@ -134,7 +143,7 @@
                     <p class="descripcion">MacBook Pro 2019</p>
                 </div>
             </article>
-            <article>
+            <article class="article">
                 <img src="../images/img-samsung-galaxy-s10.jpg" alt="imagen samsung galaxy"/>
                 <div class="articulo">
                     <div class="envio"><i class="fas fa-truck"></i></div>
@@ -146,7 +155,7 @@
                     <p class="descripcion">Galaxy S10</p>
                 </div>
             </article>
-            <article>
+            <article class="article">
                 <img src="../images/img-tv-samsung-smart.jpg" alt="imagen Tv"/>
                 <div class="articulo">
                     <div class="envio"><i class="fas fa-truck"></i></div>
