@@ -52,6 +52,11 @@ background-color: #FFF;
 border-radius: 50%;
 right: 20px;
 top: -15px;
+transition: all 0.5s;
+}
+
+.articulo .envio i:hover{
+    transform: rotate(90deg);
 }
 
 .envio{
