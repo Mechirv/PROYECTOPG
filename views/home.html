@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="../css/home.css"/>
     <link rel="stylesheet" href="../css/header.css"/>
     <link rel="stylesheet" href="../css/footer.css"/>
-
 </head>
 
 <body>
 
     <header class="header">
-        <div class="header-top">
-            <div class="logo">
+        <section class="header-top">
+            <figure class="logo">
                 <a href="/">
                     <img src="../images/logo-mercado-liebre.svg" alt="Logo de la pagina"/>
                 </a>
-            </div>
+            </figure>
             
             <div class="busqueda">
                 <form id="form-busqueda" method="GET" action="/">
@@ -29,16 +28,16 @@
             </div>
 
             <h2 class="cuotas"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
-        </div>
+        </section>
        
         <!--MENU DE NAVEGACIÓN-->
        
-        <div class="header-bottom">
-
-            <label for="check-menu" id="menu"><i class="fas fa-bars fa-1x"></i></label>
-            <input type="checkbox" id="check-menu">
+        <section class="header-bottom">
+            <a href="#nav"><figure id="menu"><i class="fas fa-bars fa-1x"></i></figure></a>
             
-            <nav class="nav-bar">
+
+            <nav class="nav-bar" id="nav">
+                <a href="#" class="close"><i class="fas fa-times"></i></a>
                 <ul class="left-bar">
                     <li>Ofertas </li>
                     <li>Tiendas Oficiales </li>
@@ -52,10 +51,7 @@
                 </ul>
             </nav>
 
-
-        </div>
-
-
+        </section>
 
     </header>
    
@@ -66,7 +62,9 @@
     
     <section id="ultimaBusqueda">
         <h3>Basado en tu última búsqueda</h3>
+        
         <section class="grid-articulos">
+            
             <article class="article">
                 <img src="../images/img-cafetera-moulinex.jpg" alt="imagen cafetera"/>
                 <section class="articulo">
@@ -78,6 +76,7 @@
                     <p class="descripcion">Cafetera Moulinex</p> 
                 </section>   
             </article>
+            
             <article class="article">
                 <img src="../images/img-macbook-pro-2019.jpg" alt="imagen macBook"/>
                 <section class="articulo">
@@ -89,6 +88,7 @@
                     <p class="descripcion">MacBook Pro 2019</p>
                 </section>
             </article>
+            
             <article class="article"> 
                 <img src="../images/img-samsung-galaxy-s10.jpg" alt="imagen samsung galaxy"/>
                 <section class="articulo">
@@ -100,6 +100,7 @@
                     <p class="descripcion">Galaxy S10</p>
                 </section>
             </article>
+            
             <article class="article">
                 <img  src="../images/img-tv-samsung-smart.jpg" alt="imagen tv"/>
                 <section class="articulo">
@@ -178,23 +179,23 @@
     
     <!-- FOOTER-->
     <footer>
-        <div  class="pie">
+        <section  class="pie">
             <i class="fas fa-credit-card fa-2x"></i>
             <h4>Pagá con tarjeta o efectivo</h4>
             <p class="cuerpo">Con MercadoLibreCash tenes cuotas sin<br>
              interés con tarjeta o efectivo en puntos de <br>
             pago. ¡Y siempre es seguro!<br>
             </p>
-        </div>
-        <div class="pie">
+        </section>
+        <section class="pie">
             <i class="fas fa-gift fa-2x"></i>
             <h4>Envío gratis desde los $2.500</h4>
             <p class="cuerpo">Solo por estar registrado en Mercado Liebre<br>
             tenes envío gratis en miles de productos. Es<br>
             un beneficio de Mercado Puntos<br>
             </p>
-        </div>
-        <div class="pie">
+        </section>
+        <section class="pie">
             <i class="fas fa-user-shield fa-2x"></i>
             <h4>Seguridad de principio a fin</h4>
             <p class="cuerpo">
@@ -202,7 +203,7 @@
             no hay nada que no puedas hacer porque estas<br>
                 siempre protegid@<br>
             </p>
-        </div>
+        </section>
     </footer>
     
     
