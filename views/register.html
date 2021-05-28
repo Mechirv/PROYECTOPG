@@ -59,31 +59,31 @@
     <!--MAIN-->
     <main>
 
-        <div class="register-contenedor">
+        <section class="register-contenedor">
             <div class="header">
                 <h1>INGRESE SUS DATOS</h1>
             </div>
 
             <form id="register" action="/" method="GET">
-                <div class=nom-ape>
+                <fieldset class=nom-ape>
                     <label for="nom-ape">Nombre y Apellido:</label>
                     <input type="text" name="nom-ape"  id="nom-ape" required>
-                </div>
+                </fieldset>
         
-                <div class="usuario">
+                <fieldset class="usuario">
                     <label for="usuario">Nombre de Usuario: </label>
                     <input type="text" name="usuario"  id="usuario" required>
-                </div>
+                </fieldset>
         
-                <div class="fecNac">
+                <fieldset class="fecNac">
                     <label for="fecNac">Fecha de Nacimiento: </label>
                     <input type="date" name="fecNac"  id="fecNac" required>
-                </div>
+                </fieldset>
         
-                <div class="domicilio">
+                <fieldset  class="domicilio">
                     <label for="domicilio">Domicilio: </label>
                     <input type="text" name="domicilio"  id="domicilio" required>
-                </div>
+                </fieldset>
                 
 
                 <fieldset class="perfil">
@@ -122,37 +122,37 @@
                         <input type="checkbox" name="intereses" value="Vida Sana">
                         <label for="electro">Vida Sana</label>
                     </div>
-                </fieldset>> 
+                </fieldset>
 
-                <div class="foto">
+                <figure class="foto">
                     <label for="foto">Foto: </label>
                     <input type="file" name="foto" id="foto" accept=".jpg">
-                </div>
+                </figure>
 
-                <div class="password">
+                <fieldset class="password">
                     <label for="pass">Contraseña: </label>
                     <input type="password" name="pass"  id="password" required>
-                </div>
+                </fieldset>
                 
-                <div class="password">
+                <fieldset class="password">
                     <label for="confirm-pass">Confirmar Contraseña: </label>
                     <input type="password" name="confirm"  id="confirm-pass" required>
-                </div>
+                </fieldset>
                 
         
-                <div class="buttons">
+                <fieldset class="buttons">
                     <div class="button">
                         <button id="cancel" type="reset">Cancelar</button>
                     </div>
                     <div class="button">
                         <button id="button-register" type="submit">Registrarse</button>
                     </div>   
-                </div>
+                </fieldset>
             </form>
             
             <div class="volver-home"><a href="/">Volver al Home</a></div>
         
-        </div>
+        </section>
     
     
     </main>

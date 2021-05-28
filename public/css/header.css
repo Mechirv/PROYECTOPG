@@ -102,6 +102,10 @@ label#menu{
     text-decoration: none;
 }
 
+.nav-bar ul li a:visited{
+    text-decoration: none;
+    color: black;
+}
 
 
  

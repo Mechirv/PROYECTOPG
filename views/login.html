@@ -57,22 +57,22 @@
 
     <!--MAIN-->
     <main>
-        <div class="login-contenedor">
+        <section class="login-contenedor">
             <h1>LOGIN</h1>
         
             <form id="form-login" action="/" method="GET">
-                <div class="usuario">
+                <fieldset class="usuario">
                     <input type="text" id="usuario" placeholder="Email o nombre de usuario" minlength="8" required/><br>
-                </div>
+                </fieldset>
     
-                <div class="password">
+                <fieldset class="password">
                     <input type="password" id="pass" placeholder="contraseña" minlength="4" maxlength="8" pattern="d{8}" required/>
-                </div>
+                </fieldset>
     
-                <div id="check">
+                <fieldset id="check">
                     <input type="checkbox" id="checkbox"/> 
                     <label for="checkbox">Recordarme</label>
-                </div>
+                </fieldset>
     
                 <div id="button-login">
                     <button id="login" type="submit" >Ingresar</button>
@@ -80,7 +80,7 @@
     
             </form>
     
-            <div id="options">
+            <section id="options">
                 <div id="forgot-pass">
                     <a href="/">Recuperar contraseña</a>
                 </div> 
@@ -91,11 +91,9 @@
                     <button type="button">Crear cuenta</button>
                     </a>
                 </div>
+            </section>
     
-                
-            </div>
-    
-        </div>
+        </section>
     
     
     </main>

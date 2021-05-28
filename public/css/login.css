@@ -31,6 +31,10 @@ h1{
     color: #666;
 }
 
+fieldset{
+    border: none;
+}
+
 #form-login{
     width: 100%;
 }
@@ -101,6 +105,8 @@ border-radius: 5px;
       margin:20px 0;
      
   }
+
+
 
                 /*----------MEDIA QUERIES----------*/
 

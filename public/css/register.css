@@ -25,6 +25,9 @@ form label, form legend{
     color: #666;
 }
 
+fieldset{
+    border: none;
+}
 
 .nom-ape, .confirm-pass,
 .usuario, .fecNac, .domicilio,
